@@ -21,9 +21,9 @@
         </plugins>
     </build>
     <modules>
-        <module>api-common-interface</module>
-        <module>service-provider</module>
-        <module>service-consumer</module>
+        <module>rpc-api-common-interface</module>
+        <module>rpc-service-provider</module>
+        <module>rpc-service-consumer</module>
     </modules>
 
     <dependencies>
