@@ -16,5 +16,7 @@
 
 ### rpc-service-consumer 工程用于调用服务提供者发布的服务
     
-    
-    1. 通过rpc-service-consumer 模块下的 `ConsumerStarter.java` 启动服务消费端
+    0. 首先：客户端通过接口类名创建出对应的代理对象
+    1. 其次：在创建代理对象的时候同时启动netty，即开启客户端通信
+    2. 最后：通过代理对象调用目标接口的方法，完成远程方法调用
+    3. 通过rpc-service-consumer 模块下的 `ConsumerStarter.java` 启动服务消费端
