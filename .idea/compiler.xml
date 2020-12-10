@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="first-netty-project" />
+        <module name="api-common-interface" />
+        <module name="service-provider" />
+        <module name="service-consumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-common" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
