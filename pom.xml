@@ -21,9 +21,12 @@
         </plugins>
     </build>
     <modules>
-        <module>api-common-interface</module>
-        <module>service-provider</module>
-        <module>service-consumer</module>
+        <module>rpc-api-common-interface</module>
+        <module>rpc-service-provider</module>
+        <module>rpc-service-consumer</module>
+        <module>dubbo-rpc-interface</module>
+        <module>dubbo-service-provider</module>
+        <module>dubbo-client-consumer</module>
     </modules>
 
     <dependencies>
@@ -36,6 +39,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.22</version>
+        </dependency>
+        <!-- 工具类 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.1</version>
         </dependency>
     </dependencies>
 
